@@ -16,31 +16,33 @@ class Home extends StatelessWidget {
           centerTitle: true,
           backgroundColor:Colors.red[600]
       ),
-      body:Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children:<Widget>[
-          Row(
-            children: [
-              Text('Hello'),
-              Text('World')
-            ],
+      body:Row(
+        children:[
+          Expanded(flex:2,child: Image.asset('assets/cosmoh-love-yKOKzmGAR6M-unsplash.jpg')),
+          Expanded(
+            flex:3,
+            child: Container(
+              padding:EdgeInsets.all(30.0),
+              color:Colors.cyan,
+              child:Text('1')
+            ),
           ),
-          Container(
-              padding:EdgeInsets.all(30),
-              color:Colors.pinkAccent,
-              child:Text('two')
+          Expanded(
+          flex:2,
+            child:Container(
+                padding:EdgeInsets.all(30.0),
+                color:Colors.pink,
+                child:Text('2')
+            ),
           ),
-          Container(
-            padding:EdgeInsets.all(20),
-            color:Colors.cyan,
-            child:Text('one')
+          Expanded(
+            flex:3,
+            child: Container(
+                padding:EdgeInsets.all(30.0),
+                color:Colors.amber,
+                child:Text('3')
+            ),
           ),
-          Container(
-              padding:EdgeInsets.all(40),
-              color:Colors.amber,
-              child:Text('three')
-          )
         ]
       ),
       floatingActionButton: FloatingActionButton(
